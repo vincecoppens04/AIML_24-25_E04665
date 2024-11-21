@@ -68,9 +68,7 @@ Dimensionality reduction was performed using PCA to visualize the clusters. In t
 ![](Images/2DPCA.png)
 ![](Images/3DPCA.png)
 
-To evaluate cluster quality, hyperparameter tuning was conducted using the Calinski-Harabasz Index. This metric, also known as the Variance Ratio Criterion, measures the quality of clustering by comparing between-cluster dispersion (how distinct clusters are from one another) to within-cluster dispersion (how compact clusters are). A higher Calinski-Harabasz Index indicates better-defined clusters with clear separation and tight groupings.
-
-AgglomerativeClustering models were tested with various linkage methods (ward, complete, average, single), distance metrics (euclidean, manhattan, cosine), and different numbers of clusters to identify the best-performing configuration. The results, including the typical characteristics of the clusters as they currently appear, will be described in detail in the results section.
+To evaluate cluster quality, hyperparameter tuning was conducted using the Calinski-Harabasz Index. This metric, also known as the Variance Ratio Criterion, measures the quality of clustering by comparing between-cluster dispersion (how distinct clusters are from one another) to within-cluster dispersion (how compact clusters are). A higher Calinski-Harabasz Index indicates better-defined clusters with clear separation and tight groupings. AgglomerativeClustering models were tested with various linkage methods (ward, complete, average, single), distance metrics (euclidean, manhattan, cosine), and different numbers of clusters to identify the best-performing configuration. The results, including the typical characteristics of the clusters as they currently appear, will be described in detail in the results section.
 
 ............................................
 
@@ -78,3 +76,17 @@ AgglomerativeClustering models were tested with various linkage methods (ward, c
 
 ### **Flowchart**
 ![Flowchart](Images/flowchart.png)
+
+---
+---
+
+## **Results**
+---
+### **Hierarchical clustering**
+- **Cluster 1** includes advanced civilizations with high population, energy consumption, and resource production.
+- **Cluster 2** represents smaller civilizations with minimal resources and production, suggesting limited development.
+- **Cluster 3** strikes a balance, representing civilizations with intermediate levels of resources and activity.
+
+#### **Hierarchical clustering: hyperparameter tuning**
+- **Cluster 1** comprises highly developed civilizations with strong economies, larger populations, and significant resource utilization.
+- **Cluster 2** includes developing civilizations with smaller populations, minimal resource production, and lower energy needs.
