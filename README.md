@@ -7,13 +7,13 @@
 
 ---
 
-## **[Section 1] Introduction**
+## **Introduction**
 
-This project explores a dataset titled `alien_galaxy.csv` to analyze patterns, preprocess data, and apply clustering techniques for insight extraction. Using advanced data imputation and dimensionality reduction methods, the project demonstrates the application of machine learning and visualization tools for solving complex analytical tasks. The overarching goal is to preprocess, cluster, and visualize the dataset for better understanding and actionable insights.
+This project explores a dataset titled `alien_galaxy.csv` to analyze patterns, preprocess data, and apply clustering techniques for insight extraction. The primary goal is to define the different types of alien species and their characteristics using various clustering methods. Before clustering, the dataset undergoes thorough exploration, imputation, and cleaning to ensure accurate analysis. By leveraging advanced data imputation, dimensionality reduction, and visualization tools, this project demonstrates the application of machine learning techniques to solve complex analytical tasks and derive actionable insights.
 
 ---
 
-## **[Section 2] Methods**
+## **Methods**
 
 ### **Proposed Ideas**
 - **Preprocessing**:
@@ -28,8 +28,5 @@ This project explores a dataset titled `alien_galaxy.csv` to analyze patterns, p
   - Missing data patterns visualized using `missingno`.
   - Data distribution explored with `seaborn` and `matplotlib`.
 
-### **Environment**
-The project requires the following setup:
-1. Install necessary libraries:
-   ```bash
-   pip install pandas missingno seaborn matplotlib scikit-learn
+### **Flowchart**
+![Flowchart](flowchart.png)
