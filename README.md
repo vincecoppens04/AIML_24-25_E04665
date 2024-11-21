@@ -45,7 +45,7 @@ Once the distributions were identified, missing values were imputed using the co
 #### **Imputing dataset using KNN imputer**
 As the initial imputation approach led to a significant loss of information (lower correlations), KNN imputation was explored as an alternative to better preserve relationships between variables. After imputing the missing values, a pairplot was generated to visualize variable interactions and identify any remaining issues.
 
-While correlations are less critical for clustering, highly correlated variables can unnecessarily complicate the model. To address this, we identified and considered dropping highly correlated variables to simplify the dataset.
+While correlations are less critical for clustering, highly correlated variables can unnecessarily complicate the model.
 
 Outliers were removed to improve data quality and ensure a more balanced dataset. A range_multiplier of 3 was chosen instead of the standard 1.5, as the latter would have eliminated an excessive number of values. Using this approach, approximately 11% of the dataset was removed. Binary variables with an overwhelming majority of 0 values were excluded from the interquartile range (IQR) filtering, as their IQR was 0. Including these variables would have caused a substantial loss of data, so they were specifically handled to preserve the dataset’s integrity.
 
@@ -71,6 +71,8 @@ Dimensionality reduction was performed using PCA to visualize the clusters. In t
 To evaluate cluster quality, hyperparameter tuning was conducted using the Calinski-Harabasz Index. This metric, also known as the Variance Ratio Criterion, measures the quality of clustering by comparing between-cluster dispersion (how distinct clusters are from one another) to within-cluster dispersion (how compact clusters are). A higher Calinski-Harabasz Index indicates better-defined clusters with clear separation and tight groupings. AgglomerativeClustering models were tested with various linkage methods (ward, complete, average, single), distance metrics (euclidean, manhattan, cosine), and different numbers of clusters to identify the best-performing configuration. The results, including the typical characteristics of the clusters as they currently appear, will be described in detail in the results section.
 
 ............................................
+#### **K-Means clustering**
+
 
 ---
 
@@ -86,11 +88,13 @@ Please refer to the notebook for a detailed overview of the defining cluster var
 
 ---
 
-### **Results**
+#### **Results**
+3 clusters, euclidian distance, ward linkage
 - **Cluster 1** includes advanced civilizations with high population, energy consumption, and resource production.
 - **Cluster 2** represents smaller civilizations with minimal resources and production, suggesting limited development.
 - **Cluster 3** strikes a balance, representing civilizations with intermediate levels of resources and activity.
 
 #### **Hyperparameter tuning**
+2 clusters, cosine distance, complete linkage
 - **Cluster 1** comprises highly developed civilizations with strong economies, larger populations, and significant resource utilization.
 - **Cluster 2** includes developing civilizations with smaller populations, minimal resource production, and lower energy needs.
