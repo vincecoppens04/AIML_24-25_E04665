@@ -29,4 +29,4 @@ This project explores a dataset titled `alien_galaxy.csv` to analyze patterns, p
   - Data distribution explored with `seaborn` and `matplotlib`.
 
 ### **Flowchart**
-![Flowchart](flowchart.png)
+![Flowchart](Images/flowchart.png)
