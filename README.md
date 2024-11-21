@@ -99,6 +99,14 @@ Please refer to the notebook for a detailed overview of the defining cluster var
 - **Cluster 1** comprises highly developed civilizations with strong economies, larger populations, and significant resource utilization.
 - **Cluster 2** includes developing civilizations with smaller populations, minimal resource production, and lower energy needs.
 
+............................................
+#### **Results K-Means**
+
+
+
+#### **Hyperparameter tuning K-Means**
+
+
 ---
 ---
 
