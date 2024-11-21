@@ -98,3 +98,10 @@ Please refer to the notebook for a detailed overview of the defining cluster var
 2 clusters, cosine distance, complete linkage
 - **Cluster 1** comprises highly developed civilizations with strong economies, larger populations, and significant resource utilization.
 - **Cluster 2** includes developing civilizations with smaller populations, minimal resource production, and lower energy needs.
+
+---
+---
+
+## **Conclusions**
+
+---
