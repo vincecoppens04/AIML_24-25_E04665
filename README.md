@@ -81,12 +81,13 @@ To evaluate cluster quality, hyperparameter tuning was conducted using the Calin
 ---
 
 ## **Results**
+Please refer to the notebook for a detailed overview of the defining cluster variables and their corresponding values, as we aimed to keep this report concise.
 ---
-### **Hierarchical clustering**
+### **Results**
 - **Cluster 1** includes advanced civilizations with high population, energy consumption, and resource production.
 - **Cluster 2** represents smaller civilizations with minimal resources and production, suggesting limited development.
 - **Cluster 3** strikes a balance, representing civilizations with intermediate levels of resources and activity.
 
-#### **Hierarchical clustering: hyperparameter tuning**
+#### **Hyperparameter tuning**
 - **Cluster 1** comprises highly developed civilizations with strong economies, larger populations, and significant resource utilization.
 - **Cluster 2** includes developing civilizations with smaller populations, minimal resource production, and lower energy needs.
