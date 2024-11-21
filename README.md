@@ -81,8 +81,11 @@ To evaluate cluster quality, hyperparameter tuning was conducted using the Calin
 ---
 
 ## **Results**
+
 Please refer to the notebook for a detailed overview of the defining cluster variables and their corresponding values, as we aimed to keep this report concise.
+
 ---
+
 ### **Results**
 - **Cluster 1** includes advanced civilizations with high population, energy consumption, and resource production.
 - **Cluster 2** represents smaller civilizations with minimal resources and production, suggesting limited development.
