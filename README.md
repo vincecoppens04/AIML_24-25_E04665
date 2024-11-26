@@ -90,14 +90,15 @@ Please refer to the notebook for a detailed overview of the defining cluster var
 
 #### **Results Hierarchical clustering**
 3 clusters, euclidian distance, ward linkage
-- **Cluster 1** includes advanced civilizations with high population, energy consumption, and resource production.
-- **Cluster 2** represents smaller civilizations with minimal resources and production, suggesting limited development.
-- **Cluster 3** strikes a balance, representing civilizations with intermediate levels of resources and activity.
+- **Cluster 1** represents the least developed civilizations with minimal resources and activity.
+- **Cluster 2** includes civilizations with intermediate development and moderate resource utilization.
+- **Cluster 3** features advanced civilizations with high trade and production activity.
+- **Cluster 4** represents the peak of development with the largest populations, highest energy consumption, and extensive resource utilization.
 
 #### **Hyperparameter tuning Hierarchical clustering**
 2 clusters, cosine distance, complete linkage
-- **Cluster 1** comprises highly developed civilizations with strong economies, larger populations, and significant resource utilization.
-- **Cluster 2** includes developing civilizations with smaller populations, minimal resource production, and lower energy needs.
+- **Cluster 1** represents civilizations with moderate development, reflecting limited energy and resource consumption.
+- **Cluster 2** includes advanced civilizations with higher populations, resource use, and production capacities.
 
 ............................................
 #### **Results K-Means**
