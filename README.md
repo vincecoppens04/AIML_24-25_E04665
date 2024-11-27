@@ -57,7 +57,7 @@ This time, correlations were better preserved, providing a more consistent and r
 ### **Clustering**
 ............................................
 #### **Hierarchical clustering**
-To explore clustering in the dataset, linkage matrices were generated using different linkage methods (single, complete, average, and ward). The elbow method, particularly for the ward linkage, suggested setting the number of clusters to 3. Based on this, clusters were generated, and dendrograms were plotted to visualize the hierarchical structure.
+To explore clustering in the dataset, linkage matrices were generated using different linkage methods (single, complete, average, and ward). The elbow method, particularly for the ward linkage, suggested setting the number of clusters to 4. Based on this, clusters were generated, and dendrograms were plotted to visualize the hierarchical structure.
 ![](Images/linkagematrix.png)
 ![](Images/dendrogram.png)
 
@@ -68,7 +68,8 @@ Dimensionality reduction was performed using PCA to visualize the clusters. In t
 ![](Images/2DPCA.png)
 ![](Images/3DPCA.png)
 
-To evaluate cluster quality, hyperparameter tuning was conducted using the Calinski-Harabasz Index. This metric, also known as the Variance Ratio Criterion, measures the quality of clustering by comparing between-cluster dispersion (how distinct clusters are from one another) to within-cluster dispersion (how compact clusters are). A higher Calinski-Harabasz Index indicates better-defined clusters with clear separation and tight groupings. AgglomerativeClustering models were tested with various linkage methods (ward, complete, average, single), distance metrics (euclidean, manhattan, cosine), and different numbers of clusters to identify the best-performing configuration. The results, including the typical characteristics of the clusters as they currently appear, will be described in detail in the results section.
+To evaluate cluster quality, hyperparameter tuning was conducted using the Calinski-Harabasz Index. This metric, also known as the Variance Ratio Criterion, measures the quality of clustering by comparing between-cluster dispersion (how distinct clusters are from one another) to within-cluster dispersion (how compact clusters are). A higher Calinski-Harabasz Index indicates better-defined clusters with clear separation and tight groupings. Hierarchical Clustering models were tested with various linkage methods (ward, complete, average, single), distance metrics (euclidean, manhattan, cosine), and different numbers of clusters to identify the best-performing configuration. The picture below shows the clusters in 3D. The results, including the typical characteristics of the clusters as they currently appear, will be described in detail in the results section.
+![](Images/3DPCA_hyper.png)
 
 ............................................
 #### **K-Means clustering**
