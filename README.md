@@ -76,13 +76,24 @@ To evaluate cluster quality, hyperparameter tuning was conducted using the Calin
 ![](Images/3DPCA_hyper.png)
 
 ............................................
-#### **K-Means clustering**
+### **Gaussian Mixture Model (GMM)** 
 
+To explore clustering in the dataset, GMM models were generated using different covariance types (full, spherical, diagonal, tied). The optimal number of components was determined using the silhouette score, which suggested setting the number of components to 4 for full covariance. Based on this, clusters were generated, and visualizations were plotted to showcase the clustering structure.
 
----
+![Silhouette Score vs. Number of Components for GMM](Images/optimalclusterGMM.png)
 
-### **Flowchart** - Vince Coppens
-![Flowchart](Images/flowchart.png)
+An attempt was made to analyze the relationship between the Alien_Civilization_Level variable and the GMM clusters. A clear pattern was observed, with some civilization levels showing distinct representation across specific clusters, suggesting that the clusters may capture meaningful distinctions related to civilization levels. This indicates that GMM clustering might be successfully identifying patterns within civilization levels.
+
+![Correlation between Alien Civilization Level and GMM Clustering](Images/correlationGMM.png)
+
+Dimensionality reduction was performed using PCA to visualize the clusters. In the 2D visualization, clusters were distinguishable, with Trade_Activity and Exploration_Missions being the most significant variables contributing to the clusters. For further clarity, a 3D visualization was also created, where clusters were even more clearly defined. The key variables in the 3D space were Trade_Activity, Young_Colonies, and Military_Engagements.
+
+![2D PCA GMM Clustering](Images/2dpcaGMM.png)
+![3D PCA GMM Clustering](Images/3dpcaGMM.png)
+
+To evaluate cluster quality, hyperparameter tuning was conducted using the Silhouette Score. This metric measures how similar an object is to its own cluster compared to other clusters. A higher Silhouette Score indicates better-defined clusters with clear separation and tight groupings. Gaussian Mixture Models were tested with various covariance types and different numbers of components to identify the best-performing configuration. The picture below shows the clusters in 2d. The results, including the typical characteristics of the clusters as they currently appear, are described in detail in the results section.
+
+![3D PCA GMM Clustering after Hyperparameter Tuning](Images/2dpca_hyperGMM.png)
 
 ---
 ---
