@@ -80,6 +80,7 @@ To evaluate cluster quality, hyperparameter tuning was conducted using the Calin
 
 To explore clustering in the dataset, GMM models were generated using different covariance types (full, spherical, diagonal, tied). The optimal number of components was determined using the silhouette score, which suggested setting the number of components to 4 for full covariance. Based on this, clusters were generated, and visualizations were plotted to showcase the clustering structure.
 
+![BIC Score vs. Number of Components for GMM](Images/BIC_GMM.png)
 ![Silhouette Score vs. Number of Components for GMM](Images/optimalclusterGMM.png)
 
 An attempt was made to analyze the relationship between the Alien_Civilization_Level variable and the GMM clusters. A clear pattern was observed, with some civilization levels showing distinct representation across specific clusters, suggesting that the clusters may capture meaningful distinctions related to civilization levels. This indicates that GMM clustering might be successfully identifying patterns within civilization levels.
