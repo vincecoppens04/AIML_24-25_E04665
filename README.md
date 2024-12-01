@@ -117,12 +117,17 @@ Please refer to the notebook for a detailed overview of the defining cluster var
 - **Cluster 2** includes advanced civilizations with higher populations, resource use, and production capacities.
 
 ............................................
-#### **Results K-Means**
+#### **Results GMM**
+- **Cluster 0** represents civilizations with moderate development levels, focusing on biological research and moderate resource extraction while having minimal engagement in peace treaties.
+- **Cluster 1** characterizes highly developed civilizations with significant energy use, technological advancements, and resource extraction activities, indicating a focus on industrial growth.
+- **Cluster 2** represents civilizations with moderate development, focusing on expanding young colonies and maintaining strong social structures, particularly in married relationships.
+- **Cluster 3** includes advanced civilizations with high technological progress, significant mining activities, and a strong focus on resource utilization, coupled with a balanced approach to agriculture.
 
 
-
-#### **Hyperparameter tuning K-Means**
-
+#### **Hyperparameter tuning GMM**
+- **Cluster 0** represents civilizations at a moderate development level, balancing population, resources, and economic activities.
+- **Cluster 1** depicts highly developed civilizations with extensive use of resources, higher population, and sophisticated industrial activities.
+- **Cluster 2** represents minimally developed civilizations with small populations, limited resource consumption, and basic economic activities.
 
 ---
 ---
