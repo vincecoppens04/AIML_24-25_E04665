@@ -97,6 +97,23 @@ To evaluate cluster quality, hyperparameter tuning was conducted using the Silho
 ![3D PCA GMM Clustering after Hyperparameter Tuning](Images/2dpca_hyperGMM.png)
 
 ---
+
+### **Performance Metrics used**
+
+- **Calinski-Harabasz Index**
+Measures clustering quality by comparing between-cluster dispersion (how distinct clusters are from one another) to within-cluster dispersion (how compact clusters are). A higher Calinski-Harabasz Index indicates better-defined clusters with clear separation and tight groupings.
+
+- **Silhouette Score**
+Assesses how similar an object is to its own cluster compared to other clusters. A higher Silhouette Score indicates better-defined clusters with clear separation and tight groupings.
+
+- **Elbow Method**
+Evaluates the variance explained as the number of clusters increases, aiding in selecting the optimal number of clusters by identifying the "elbow" point where additional clusters offer diminishing returns.
+
+- **Bayesian Information Criterion (BIC)**
+Used to determine the optimal number of components in Gaussian Mixture Models by balancing model fit and complexity. Lower BIC values indicate better-performing models.
+
+---
+
 ---
 
 ## **Results**
