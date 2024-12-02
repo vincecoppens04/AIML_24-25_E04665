@@ -20,6 +20,10 @@ This project explores a dataset titled `alien_galaxy.csv` to analyze patterns, p
 ## **Methods & Experimental design**
 ---
 
+### **Flowchart**
+![](Images/flowchart.png)
+---
+
 ### **Libraries**
 Installing and importing all necessary Python libraries.
 
