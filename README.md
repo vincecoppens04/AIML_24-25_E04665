@@ -22,6 +22,7 @@ This project explores a dataset titled `alien_galaxy.csv` to analyze patterns, p
 
 ### **Flowchart**
 ![](Images/flowchart.png)
+
 ---
 
 ### **Libraries**
