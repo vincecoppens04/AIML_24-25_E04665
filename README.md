@@ -20,6 +20,11 @@ This project explores a dataset titled `alien_galaxy.csv` to analyze patterns, p
 ## **Methods & Experimental design**
 ---
 
+### **Flowchart**
+![](Images/flowchart.png)
+
+---
+
 ### **Libraries**
 Installing and importing all necessary Python libraries.
 
@@ -96,6 +101,9 @@ To evaluate cluster quality, hyperparameter tuning was conducted using the Silho
 
 ![3D PCA GMM Clustering after Hyperparameter Tuning](Images/2dpca_hyperGMM.png)
 
+............................................
+### **K-Means** 
+
 ---
 
 ### **Performance Metrics used**
@@ -147,6 +155,14 @@ Please refer to the notebook for a detailed overview of the defining cluster var
 - **Cluster 1** depicts highly developed civilizations with extensive use of resources, higher population, and sophisticated industrial activities.
 - **Cluster 2** represents minimally developed civilizations with small populations, limited resource consumption, and basic economic activities.
 
+............................................
+#### **Results K-Means**
+
+
+
+#### **Hyperparameter tuning K-Means**
+
+
 ---
 ---
 
@@ -155,8 +171,34 @@ Please refer to the notebook for a detailed overview of the defining cluster var
 ---
 
 ### **One paragraph conclusion**
+- All clustering methods identify a spectrum of development, ranging from minimal to advanced civilizations.
+- Common themes include the balance between technological and resource utilization, the role of economic cooperation, and the importance of exploration in advancing civilization stages.
+- The hierarchical method emphasizes development levels, K-means focuses on activity-driven clustering, and GMM adds detail by highlighting specific societal behaviors and activities.
 
-lorum ipsum
+---
+
+### **General clusters derived from results**
+From the combined results of K-means, hierarchical clustering, and Gaussian Mixture Model (GMM), a few general clusters can be identified that represent broad categories of alien civilizations:
+
+1. **Primitive Civilizations**:
+   - **Characteristics**: Minimal technological development, low resource utilization, and basic economic and social structures. These civilizations engage in limited trade or exploration and prioritize subsistence over expansion.
+   - **Examples**: Hierarchical Cluster 1, GMM Cluster 0.
+
+2. **Resource-Driven Civilizations**:
+   - **Characteristics**: Focus on high levels of resource extraction and industrial activity, often accompanied by environmental strain (e.g., elevated ammonia levels). These civilizations may have limited cooperation and peace agreements, suggesting internal or external conflict.
+   - **Examples**: K-means Cluster 1, GMM Cluster 1.
+
+3. **Trade-Oriented Civilizations**:
+   - **Characteristics**: Balanced levels of trade, moderate technological development, and steady resource use. These civilizations participate in galactic interactions and maintain stability but are not at the peak of advancement.
+   - **Examples**: K-means Cluster 0, Hierarchical Cluster 2.
+
+4. **Cooperative Explorers**:
+   - **Characteristics**: High engagement in exploration missions, strong economic agreements, and a focus on expansion and cooperation. These civilizations leverage their resources and social structures for collective growth and are forward-looking in their approach.
+   - **Examples**: K-means Cluster 2, GMM Cluster 2.
+
+5. **Highly Advanced Civilizations**:
+   - **Characteristics**: Peak technological advancements, extensive resource utilization, and significant trade and production activity. These civilizations are highly organized, with large populations and a balanced approach to agriculture, mining, and energy use. They represent the most developed societies in the dataset.
+   - **Examples**: Hierarchical Cluster 4, GMM Cluster 3.
 
 ---
 
