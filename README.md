@@ -104,6 +104,22 @@ To evaluate cluster quality, hyperparameter tuning was conducted using the Silho
 ............................................
 ### **K-Means** 
 
+K-means clustering was applied to explore the patterns and relationships within the dataset. The optimal number of clusters was determined using the Elbow Method and Silhouette Analysis.
+
+
+The Elbow Method was used to determine the ideal number of clusters by calculating the Within-Cluster Sum of Squares (WCSS). The plot indicated a significant drop between k=1 and k=3, after which the decrease in WCSS became more gradual, suggesting that k=3 could be an optimal choice. The Silhouette Analysis was performed to evaluate the consistency within clusters. The silhouette score was highest for k=2, with a slight decrease at k=3, providing evidence for clustering into 2 or 3 groups. However, considering both the Elbow and Silhouette methods, k=3 was chosen for further analysis.
+![](Images/K_means_elbow.png)
+![](Images/K_means_Silhouette.png)
+
+An attempt was made to analyze the relationship between the Alien_Civilization_Level variable and the K-means clusters. No clear pattern was observed, with all of the clusters spread relatively equally between the civilization levels.
+![](Images/K_means_civilization_distribution_across_clusters.png)
+
+PCA for Cluster Visualization was employed to reduce the dimensionality of the data and visualize the clusters in a two-dimensional space. The visualization of the clusters with k=3 is shown below. It is apparent that the three clusters are well separated, confirming the validity of k=3 as the optimal number of clusters
+![](Images/K_means_k3_2d_visualization.png)
+
+To evaluate cluster characteristics, Dimensionality Reduction using PCA in 3D was carried out. For PCA1, the most significant variables contributing to the clusters were Exploration_Missions, Alien_Population_Count, and Mineral_Extraction_Tons. Meanwhile, for PCA2, Young_Colonies and Trade_Agreements_Signed had the highest contributions.
+![](Images/K_means_k3_PCA_visualization_2d.png)
+
 ---
 
 ### **Performance Metrics used**
@@ -157,10 +173,14 @@ Please refer to the notebook for a detailed overview of the defining cluster var
 
 ............................................
 #### **Results K-Means**
+3 clusters
+- **Cluster 0**: (Balanced Developing Societies) These civilizations maintain a balance between development and sustainability. They show moderate levels of trade, biological research, and resource extraction. They are moderately active in diplomatics and galactic interactions.
+- **Cluster 1**: (Low-Development Civilizations) Planets in this cluster are characterized by limited technological advancements, low resource extraction, and low agricultural output. They prioritize galactic visits, indicating a focus on building interplanetary relationships rather than local development.
+- **Cluster 2**: (Advanced Extractive Societies) These civilizations show a strong focus on resource extraction and agricultural production. They have high technological advancements, exploration missions, and population levels, suggesting a society that prioritizes both economic growth and scientific progress. 
 
 
 
-#### **Hyperparameter tuning K-Means**
+
 
 
 ---
